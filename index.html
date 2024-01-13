@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo-principal">Welcome to Notes</h1>
+    <form id="new-note-form">
+        <div>
+            <label for="new-note"></label>
+            <textarea name="new-note" id="new-note" cols="30" rows="10" placeholder="Things to remember..."></textarea>
+        </div>
+
+        <button class="btn-hover">Create</button>
+
+    </form>
+
+    <nav class="contenedor-notas">
+        <ul class="container-note" id="container-note">
+        </ul>
+    </nav>
+    
+
+    <script src="notas.js"></script>
+    
+</body>
+</html>

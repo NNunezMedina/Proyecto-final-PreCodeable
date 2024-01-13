@@ -1,0 +1,104 @@
+  @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Kanit:wght@300&family=Merriweather+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+head {
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    gap: 20px;;
+}
+
+.titulo-principal {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+body {
+    background-color: #eaebed;
+    text-align: center;
+}
+
+textarea {
+    height: 85px;
+    width: 250px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+button {
+    margin-top: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.btn-hover:hover {
+    background-color: #7f7f7f;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    height: 85px;
+    width: 250px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+  }
+
+  .button-delete {
+    margin-top: 10px;
+    height: 20px;
+    width: 55px;
+    border-radius: 15px;
+    border: none;
+    font-size: 13px;
+    background-color:lightgray;
+    color: rgb(76, 76, 76);
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-weight: bold;
+  }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor-notas {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedor-notas {
+        grid-template-columns: 1fr;
+    }
+}
